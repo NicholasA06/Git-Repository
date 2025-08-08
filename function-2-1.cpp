@@ -5,7 +5,7 @@ void print_binary_str(string decimal_number) {
     int num = stoi(decimal_number);
 
     if (num == 0) {
-        cout << 0 << endl;
+        std::cout << 0 << endl;
         return;
     }
 
@@ -15,5 +15,5 @@ void print_binary_str(string decimal_number) {
         num /= 2;
     }
 
-    cout << binary << endl;
+    std::cout << binary << std::endl;
 }

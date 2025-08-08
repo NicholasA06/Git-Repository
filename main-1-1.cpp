@@ -11,6 +11,6 @@ int main() {
     };
 
     int result = sum_diagonal(matrix);
-    cout << result << endl;
+    std::cout << result << std::endl;
 
 }
