@@ -1,19 +1,19 @@
 #include <iostream>
 #include <string>
 
-void print_binary_str(string decimal_number) {
-    int num = stoi(decimal_number);
+void print_binary_str(std::string decimal_number) {
+    int num = std::stoi(decimal_number);
 
-    if (num == 0) {
-        std::cout << 0 << endl;
+    if (num == 0) { 
+        std::cout << 0 << std::endl;
         return;
     }
 
-    string binary = "";
+    std::string binary = "";
     while (num > 0) {
-        binary = to_string(num % 2) + binary;
+        binary = std::to_string(num % 2) + binary;
         num /= 2;
     }
-
+    
     std::cout << binary << std::endl;
 }
