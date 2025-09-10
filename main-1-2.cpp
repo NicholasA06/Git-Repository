@@ -36,4 +36,8 @@ int main() {
     std::cout << "Enter ID of vehicle to unpark: ";
     std::cin >> remove_id;
     lot.unparkVehicle(remove_id);
+
+    lot.printAll();
+
+    return 0;
 }
